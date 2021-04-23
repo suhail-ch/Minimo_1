@@ -1,0 +1,17 @@
+<div class="text">
+    <h1>SEGUIMIENTOS</h1>
+  </div>
+
+  <div class="center">
+    <button (click)="newSeguimiento()" class="button" >Add new seguimiento</button>
+    <button (click)="admin()" class="button"> Back </button>
+    <button (click)="delete()" class="button"> Delete </button>
+  </div>
+
+  <div class="seguimiento">
+    
+      <app-seguimiento-card *ngFor="let seguimiento of seguimientos; index as i"
+        [seguimiento]="seguimiento" [index]="i">
+      </app-seguimiento-card>  
+  </div>
+  

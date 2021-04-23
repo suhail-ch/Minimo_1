@@ -1,0 +1,89 @@
+<div class="login">
+  <h2 class="login-header">New Seguimiento</h2>
+  <form [formGroup]="seguimientoForm" class="login-container" (ngSubmit)="submitSeguimiento()">
+    
+    
+    <input type="nombre" placeholder="Nombre*" formControlNombre="nombre" />
+    <ng-container
+      *ngIf="!formControls.nombre.valid &&formControls.nombre.touched"
+    >
+      <p *ngIf="formControls.nombre.errors.required">
+        Name is required
+      </p>
+    </ng-container>
+
+
+    <input type="fecha" placeholder="Fecha*" formControlFecha="fecha" />
+    <ng-container
+      *ngIf="!formControls.fecha.valid &&formControls.fecha.touched"
+    >
+      <p *ngIf="formControls.fecha.errors.required">
+        Fecha is required
+      </p>
+    </ng-container>
+
+
+    <input type="dni" placeholder="Dni*" formControlDni="dni" />
+    <ng-container
+      *ngIf="!formControls.dni.valid &&formControls.dni.touched"
+    >
+      <p *ngIf="formControls.dni.errors.required">
+        DNI is required
+      </p>
+    </ng-container>
+
+    <input type="telefono" placeholder="Telefono*" formControlTelefono="telefono" />
+    <ng-container
+      *ngIf="!formControls.telefono.valid &&formControls.telefono.touched"
+    >
+      <p *ngIf="formControls.telefono.errors.required">
+        Telephone is required
+      </p>
+    </ng-container>
+
+    <input type="fiebre" placeholder="Fiebre*" formControlFiebre="fiebre" />
+    <ng-container
+      *ngIf="!formControls.fiebre.valid &&formControls.fiebre.touched"
+    >
+      <p *ngIf="formControls.fiebre.errors.required">
+        Fiber is required
+      </p>
+    </ng-container>
+
+    <input type="tos" placeholder="Tos*" formControlTos="tos" />
+    <ng-container
+      *ngIf="!formControls.tos.valid &&formControls.tos.touched"
+    >
+      <p *ngIf="formControls.tos.errors.required">
+        Tos is required
+      </p>
+    </ng-container>
+   
+  
+    <input type="dificultadRespiratoria" placeholder="DificultadRespiratoria*" formControlDificultadRespiratoria="dificultadRespiratoria" />
+    <ng-container
+      *ngIf="!formControls.dificultadRespiratoria.valid &&formControls.dificultadRespiratoria.touched"
+    >
+      <p *ngIf="formControls.dificultadRespiratoria.errors.required">
+        DificultadRespiratoria is required
+      </p>
+    </ng-container>
+
+
+    <input type="malestarGeneral" placeholder="MalestarGeneral*" formControlMalestarGeneral="malestarGeneral" />
+    <ng-container
+      *ngIf="!formControls.malestarGeneral.valid &&formControls.malestarGeneral.touched"
+    >
+      <p *ngIf="formControls.malestarGeneral.errors.required">
+        MalestarGeneral is required
+      </p>
+    </ng-container>
+       
+
+    <p>
+      <input type="submit" value="Submit" [disabled]="seguimientoForm.invalid" />
+    </p>
+
+
+  </form>
+</div>

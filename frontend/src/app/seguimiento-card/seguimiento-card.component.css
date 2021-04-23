@@ -1,0 +1,32 @@
+.seguimiento-card{
+  background-color: wheat;
+}
+
+
+.seguimiento-nombre {
+  font-weight: bold;
+}
+
+.seguimiento-fecha {
+  font-weight: bold;
+}
+
+
+.button {
+  background-color: #4caf50; 
+  border: none;
+  color: white;
+  padding: 3px 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.center {
+  text-align: center;
+}

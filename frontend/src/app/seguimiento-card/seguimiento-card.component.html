@@ -1,0 +1,39 @@
+<div class="seguimiento-card" *ngIf="seguimiento">
+
+    <div class="seguimiento-nombre">
+        seguimiento {{index+1}}: {{seguimiento.nombre}}
+    </div>
+
+    <div class="seguimiento-fecha">
+        fecha: {{seguimiento.fecha}}
+    </div>
+
+    <div class="seguimiento-dni">
+        dni: {{seguimiento.dni}}
+    </div>
+
+    <div class="seguimiento-telefono">
+        telefono: {{seguimiento.telefono}}
+    </div>
+
+    <div class="seguimiento-fiebre">
+        fiebre: {{seguimiento.fiebre}}
+    </div>
+
+    <div class="seguimiento-tos">
+        tos: {{seguimiento.tos}}
+    </div>
+
+    <div class="seguimiento- dificultadRespiratoria">
+        dificultadRespiratoria: {{seguimiento.dificultadRespiratoria}}
+    </div>
+
+    <div class="seguimiento- malestarGeneral">
+        malestarGeneral: {{seguimiento.malestarGeneral}}
+    </div>
+    
+    
+    <button (click)="deleteSeguimiento(seguimiento.nombre)" class="button" >Delete</button>
+
+</div>
+<br>
